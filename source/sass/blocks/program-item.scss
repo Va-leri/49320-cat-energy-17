@@ -1,0 +1,25 @@
+.program-item {
+  background-color: $gray;
+
+  @include section-paddings;
+  padding-top: $standard-padding;
+}
+
+.program-item__title {
+  margin-left: 90px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 24px;
+}
+
+.program-item__description {
+  text-align: left;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.program-item__link {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}

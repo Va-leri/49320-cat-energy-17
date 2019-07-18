@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: $gray;
+
+  @include section-paddings;
+}
+
+.page-footer__section:not(:last-child) {
+  border-bottom: $gray-border;
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-menu__item {
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-top: 1px solid #dadada;
+}
+
+.main-menu__link {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+}

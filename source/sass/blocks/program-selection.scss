@@ -1,0 +1,7 @@
+.program-selection {
+  @include section-paddings;
+}
+
+.program-selection__item:not(:last-child) {
+  margin-bottom: 20px;
+}
