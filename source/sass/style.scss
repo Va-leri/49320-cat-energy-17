@@ -1,4 +1,6 @@
 @import "variables.scss",
+  "mixins.scss",
+  "fonts.scss",
   "blocks/center-container.scss",
   "blocks/main-menu.scss",
   "blocks/page-main.scss",
@@ -14,36 +16,6 @@
   "blocks/item-card.scss",
   "blocks/show-all.scss",
   "blocks/index.scss";
-
-@font-face {
-  font-family: "Oswald Regular";
-  src: local("Oswald Regular"),
-    local("oswaldregular"),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald Regular";
-  src: local("Oswald Regular"),
-    local("oswaldregular"),
-    url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald Medium";
-  src: local("Oswald Medium"),
-    local("oswaldmedium"),
-    url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
   margin: 0;
