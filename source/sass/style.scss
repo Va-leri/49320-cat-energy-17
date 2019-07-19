@@ -1,0 +1,25 @@
+@import "variables.scss",
+  "mixins.scss",
+  "fonts.scss",
+  "blocks/center-container.scss",
+  "blocks/main-menu.scss",
+  "blocks/page-main.scss",
+  "blocks/typical-button.scss",
+  "blocks/program-item.scss",
+  "blocks/method-description.scss",
+  "blocks/program-selection.scss",
+  "blocks/visually-hidden.scss",
+  "blocks/page-footer.scss",
+  "blocks/social.scss",
+  "blocks/copyright.scss",
+  "blocks/catalog.scss",
+  "blocks/item-card.scss",
+  "blocks/show-all.scss",
+  "blocks/index.scss";
+
+body {
+  margin: 0;
+
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-weight: normal;
+}

@@ -1,0 +1,29 @@
+.index {
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.index__heading {
+  min-height: 440px;
+
+  @include section-paddings;
+  background-image: url("../../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position-y: 167px;
+  background-position-x: center;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.index__title {
+  font-size: $title-font;
+  line-height: $title-font;
+}
+
+.index__lead {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
