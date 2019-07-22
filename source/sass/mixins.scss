@@ -8,4 +8,39 @@
 @mixin section-paddings {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@mixin standard-margins {
+  @media (min-width: $tablet-width) {
+    margin-left: $margin-tablet;
+    margin-right: $margin-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: $margin-desktop;
+    margin-right: $margin-desktop;
+  }
+}
+
+@mixin viewport-width {
+  box-sizing: border-box;
+  outline: 1px solid aquamarine;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

@@ -1,0 +1,10 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-body__section--center {
+  @media (min-width: $tablet-width) {
+    @include viewport-width;
+  }
+}

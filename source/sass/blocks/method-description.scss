@@ -1,5 +1,7 @@
 .method-description {
   @include section-paddings;
+
+  outline: 1px solid rgb(96, 244, 237);
 }
 
 .method-description__title {
@@ -7,8 +9,16 @@
 }
 
 .method-description__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .method-description__item {
@@ -17,4 +27,13 @@
   margin-top: 10px;
   margin-bottom: 10px;
   min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

@@ -1,0 +1,7 @@
+.page-header {
+  @include viewport-width;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}

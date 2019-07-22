@@ -1,7 +1,11 @@
-@import "variables.scss",
+@import "normalize.scss",
+  "variables.scss",
   "mixins.scss",
   "fonts.scss",
+  "blocks/page-body.scss",
+  "blocks/index-body.scss",
   "blocks/center-container.scss",
+  "blocks/page-header.scss",
   "blocks/main-menu.scss",
   "blocks/page-main.scss",
   "blocks/typical-button.scss",
@@ -14,8 +18,8 @@
   "blocks/copyright.scss",
   "blocks/catalog.scss",
   "blocks/item-card.scss",
-  "blocks/show-all.scss",
-  "blocks/index.scss";
+  "blocks/index.scss",
+  "blocks/site-navigation.scss";
 
 body {
   margin: 0;

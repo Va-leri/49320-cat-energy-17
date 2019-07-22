@@ -1,10 +1,26 @@
 .page-footer {
   background-color: $gray;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
 
   @include section-paddings;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include viewport-width;
+  }
 }
 
 .page-footer__section:not(:last-child) {
   border-bottom: $gray-border;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
