@@ -1,0 +1,16 @@
+.page-title {
+  margin: 0 auto;
+  min-height: 105px;
+
+  @include viewport-width;
+  @include standard-paddings;
+
+  font-size: $title-font;
+  line-height: $title-font;
+
+  border-bottom: $gray-border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

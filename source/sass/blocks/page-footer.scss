@@ -5,14 +5,15 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
-  @include section-paddings;
+  @include standard-paddings;
+  @include viewport-width;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-
-    @include viewport-width;
+    // align-self: center;
   }
 }
 

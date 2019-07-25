@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="index-body page-body">
-  <header class="page-header">
-    <nav class="site-navigation">
+<body>
+  <header class="page-header page-header--welcome">
+    <nav class="page-header__wrapper site-navigation">
       <a class="page-header__logo">
         <img class="page-header__logo-icon" src="http://placehold.it/33x38" width="33" height="38" alt="logo-icon">
         <img class="page-header__logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
       </a>
       <button class="site-navigation__toggle" type="button">Открыть меню</button>
-      <ul class="site-navigation__list main-menu main-menu--index">
+      <ul class="site-navigation__list main-menu main-menu--dark-background">
         <li class="main-menu__item">
           <a class="main-menu__link">Главная</a>
         </li>
@@ -29,41 +29,47 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main index">
-    <section class="index__heading quick-start">
-      <h1 class="index__title">Функциональное питание для котов</h1>
-      <b class="index__lead">Занялся собой? Займись котом!</b>
-      <a class="typical-button index__start-button" href="#">Подобрать программу</a>
+  <main class="page-main">
+    <section class="quick-start">
+      <div class="quick-start__wrapper">
+        <h1 class="quick-start__title">Функциональное питание для котов</h1>
+        <b class="quick-start__lead">Занялся собой? Займись котом!</b>
+        <a class="typical-button quick-start__button" href="#">Подобрать программу</a>
     </section>
-    <section class="page-body__section--center center-container program-selection">
-      <h2 class="visually-hidden">Подбор программы</h2>
-      <section class="program-item program-selection__item program-item--weight-loss">
-        <h2 class="program-item__title">Похудение</h2>
-        <p class="program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-          Пора на диету! Cat Energy Slim поможет
-          вашему питомцу сбросить лишний вес.</p>
-        <a class="program-item__link">Каталог Slim</a>
-      </section>
-      <section class="program-item program-selection__item program-item--weight-gain">
-        <h2 class="program-item__title">Набор массы</h2>
-        <p class="program-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-          Pro
-          поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program-item__link">Каталог pro</a>
-      </section>
+    </div>
+    <section class="program-selection">
+      <div class="program-selection__wrapper">
+        <h2 class="visually-hidden">Подбор программы</h2>
+        <section class="program-item program-selection__item program-item--weight-loss">
+          <h2 class="program-item__title">Похудение</h2>
+          <p class="program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям?
+            Пора на диету! Cat Energy Slim поможет
+            вашему питомцу сбросить лишний вес.</p>
+          <a class="program-item__link">Каталог Slim</a>
+        </section>
+        <section class="program-item program-selection__item program-item--weight-gain">
+          <h2 class="program-item__title">Набор массы</h2>
+          <p class="program-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+            Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program-item__link">Каталог pro</a>
+      </div>
     </section>
-    <section class="page-body__section--center method-description center-container">
-      <h2 class="method-description__title">Как это работает</h2>
-      <ol class="method-description__list">
-        <li class="method-description__item method-description__item--use">Функциональное питание содержит только
-          полезные питательные вещества.</li>
-        <li class="method-description__item method-description__item--simplicity">Выпускается в виде порошка, который
-          нужно лишь залить кипятком и готово.</li>
-        <li class="method-description__item method-description__item--economy">Замените один-два приема обычной еды на
-          наше функциональное питание.</li>
-        <li class="method-description__item method-description__item--quickness">Уже через месяц наслаждайтесь
-          изменениями к лучшему вашего питомца!</li>
-      </ol>
+    <section class="method-description">
+      <div class="method-description__wrapper">
+        <h2 class="method-description__title">Как это работает</h2>
+        <ol class="method-description__list">
+          <li class="method-description__item method-description__item--use">Функциональное питание содержит только
+            полезные питательные вещества.</li>
+          <li class="method-description__item method-description__item--simplicity">Выпускается в виде порошка, который
+            нужно лишь залить кипятком и готово.</li>
+          <li class="method-description__item method-description__item--economy">Замените один-два приема обычной еды на
+            наше функциональное питание.</li>
+          <li class="method-description__item method-description__item--quickness">Уже через месяц наслаждайтесь
+            изменениями к лучшему вашего питомца!</li>
+        </ol>
+      </div>
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
@@ -97,7 +103,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="center-container page-footer__wrapper">
+    <div class="page-footer__wrapper">
       <section class="page-footer__section">
         <a class="page-footer__logo">
           <img src="http://placehold.it/128x24" alt="Cat Energy" class="page-footer__logo-image" width="128"

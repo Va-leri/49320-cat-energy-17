@@ -5,7 +5,7 @@
   text-align: left;
 }
 
-@mixin section-paddings {
+@mixin standard-paddings {
   padding-left: 20px;
   padding-right: 20px;
 
@@ -21,6 +21,9 @@
 }
 
 @mixin standard-margins {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: $tablet-width) {
     margin-left: $margin-tablet;
     margin-right: $margin-tablet;
@@ -35,6 +38,7 @@
 @mixin viewport-width {
   box-sizing: border-box;
   outline: 1px solid aquamarine;
+  width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;

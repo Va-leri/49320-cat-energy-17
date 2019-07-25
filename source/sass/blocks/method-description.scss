@@ -1,5 +1,10 @@
 .method-description {
-  @include section-paddings;
+  margin: 0 auto;
+}
+
+.method-description__wrapper {
+  @include standard-paddings;
+  @include viewport-width;
 
   outline: 1px solid rgb(96, 244, 237);
 }
@@ -27,6 +32,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   min-height: 60px;
+  outline: 1px solid indigo;
 
   @media (min-width: $tablet-width) {
     width: 324px;

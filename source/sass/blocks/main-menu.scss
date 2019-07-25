@@ -17,10 +17,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 480px;
+    width: 50%;
+    max-width: 50%;
   }
 
-  &--index {
+  &--dark-background {
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }

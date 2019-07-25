@@ -1,9 +1,16 @@
 .item-card {
   box-sizing: border-box;
 
+  @include standard-paddings;
+  padding-bottom: 25px;
+  border-bottom: $gray-border;
+
   @media (min-width: $tablet-width) {
     min-height: 510px;
     width: 324px;
+    background: #f2f2f2;
+    // padding: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,6 +18,19 @@
   }
 
   outline: 1px solid indigo;
+}
+
+.item-card--additional {
+  width: auto;
+  min-height: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  border-bottom: $gray-border;
+
+  @media (min-width: 768px) and (max-width: 1299px) {
+    @include standard-paddings;
+  }
 }
 
 .item-card__title {

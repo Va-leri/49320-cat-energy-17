@@ -3,10 +3,11 @@
   "mixins.scss",
   "fonts.scss",
   "blocks/page-body.scss",
-  "blocks/index-body.scss",
-  "blocks/center-container.scss",
+  // "blocks/index-body.scss",
+  // "blocks/center-container.scss",
   "blocks/page-header.scss",
   "blocks/main-menu.scss",
+  "blocks/quick-start.scss",
   "blocks/page-main.scss",
   "blocks/typical-button.scss",
   "blocks/program-item.scss",
@@ -16,12 +17,16 @@
   "blocks/page-footer.scss",
   "blocks/social.scss",
   "blocks/copyright.scss",
-  "blocks/catalog.scss",
+  "blocks/catalog-list.scss",
   "blocks/item-card.scss",
-  "blocks/index.scss",
-  "blocks/site-navigation.scss";
+  "blocks/additional-goods.scss",
+  // "blocks/index.scss",
+  "blocks/site-navigation.scss",
+  "blocks/page-title.scss",
+  "blocks/order-all.scss";
 
 body {
+  position: relative;
   margin: 0;
 
   font-family: "Oswald Regular", "Arial", sans-serif;

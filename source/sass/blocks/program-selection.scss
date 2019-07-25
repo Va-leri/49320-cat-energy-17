@@ -1,15 +1,21 @@
 .program-selection {
-  @include section-paddings;
+  margin: 0 auto;
+
+  outline: 1px solid saddlebrown;
+}
+
+.program-selection__wrapper {
   display: flex;
   flex-direction: column;
+
+  @include standard-paddings;
+  @include viewport-width;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
-
-  outline: 1px solid saddlebrown;
 }
 
 .program-selection__item {

@@ -1,7 +1,15 @@
-.page-header {
-  @include viewport-width;
-
-  @media (min-width: $tablet-width) {
-    align-self: center;
+.page-header--welcome {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -$desktop-width / 2;
   }
+}
+
+.page-header__wrapper {
+
+  margin: 0 auto;
+
+  @include viewport-width;
 }
