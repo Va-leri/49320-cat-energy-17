@@ -1,8 +1,8 @@
 .program-item {
   background-color: $gray;
 
-  @include section-paddings;
-  padding-top: $standard-padding;
+  @include standard-paddings;
+  padding-top: 20px;
 }
 
 .program-item__title {

@@ -1,0 +1,102 @@
+.quick-start {
+  // align-items: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    // padding-left: $padding-tablet + 90px;
+    // padding-right: $padding-tablet + 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // margin-bottom: 80px;
+    // margin-top: -80px;
+    // z-index: -1;
+    max-height: 670px;
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #68b738 50%);
+    background-position-x: right, left;
+    background-position-y: top, top;
+    background-repeat: no-repeat;
+    background-size: 50%, 100%;
+  }
+}
+
+.quick-start__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 485px;
+  margin: 0 auto;
+
+  @include standard-paddings;
+  @include viewport-width;
+
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto auto, contain;
+  background-position-y: 167px, top;
+  background-position-x: center, center;
+
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+
+    min-height: 855px;
+    padding-left: $padding-tablet + 90px;
+    padding-right: $padding-tablet + 90px;
+
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    color: #111111;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 80px;
+    min-height: 670px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-position-x: center;
+    background-position-y: 167px;
+  }
+  outline: 1px solid darkorchid;
+}
+
+.quick-start__title {
+  font-size: $title-font;
+  line-height: $title-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
+.quick-start__lead {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    // line-height: normal;
+  }
+}
+
+.quick-start__button {
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    width: auto;
+  }
+}

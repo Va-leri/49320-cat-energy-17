@@ -1,7 +1,30 @@
 .program-selection {
-  @include section-paddings;
+  margin: 0 auto;
+
+  outline: 1px solid saddlebrown;
 }
 
-.program-selection__item:not(:last-child) {
+.program-selection__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include standard-paddings;
+  @include viewport-width;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.program-selection__item {
   margin-bottom: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 370px;
+    margin-bottom: 0;
+  }
 }

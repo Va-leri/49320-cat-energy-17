@@ -1,0 +1,19 @@
+.site-navigation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  outline: 1px solid seagreen;
+}
+
+.site-navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-navigation__list {
+  outline: 1px solid darkmagenta;
+}
