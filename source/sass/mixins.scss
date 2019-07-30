@@ -37,7 +37,7 @@
 
 @mixin viewport-width {
   box-sizing: border-box;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
   width: $mobile-width;
 
   @media (min-width: $tablet-width) {
@@ -46,5 +46,17 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+  }
+}
+
+@mixin title-font {
+  font-size: $title-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
   }
 }

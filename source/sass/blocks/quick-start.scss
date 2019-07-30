@@ -1,17 +1,16 @@
 .quick-start {
   // align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     // padding-left: $padding-tablet + 90px;
     // padding-right: $padding-tablet + 90px;
   }
 
   @media (min-width: $desktop-width) {
-    // margin-bottom: 80px;
-    // margin-top: -80px;
-    // z-index: -1;
-    max-height: 670px;
+    margin-bottom: 80px;
+    max-height: 696px;
     background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, transparent 50%, #68b738 50%);
     background-position-x: right, left;
     background-position-y: top, top;
@@ -23,7 +22,7 @@
 .quick-start__wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 485px;
+  min-height: 480px;
   margin: 0 auto;
 
   @include standard-paddings;
@@ -46,29 +45,34 @@
     padding-right: $padding-tablet + 90px;
 
     background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: bottom;
     color: #111111;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    // padding-top: 80px;
-    min-height: 670px;
-    padding-left: 80px;
+    padding-top: 178px;
+    min-height: 696px;
+    padding-left: 120px;
     padding-right: 80px;
     background-image: url("../img/index-can-desktop@1x.png");
-    background-position-x: center;
-    background-position-y: 167px;
+    background-position-x: 490px;
+    background-position-y: 142px;
   }
-  outline: 1px solid darkorchid;
+  // outline: 1px solid darkorchid;
 }
 
 .quick-start__title {
+  margin-top: 26px;
+  margin-bottom: 26px;
   font-size: $title-font;
   line-height: $title-font;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: normal;
+    line-height: 60px;
+    margin-top: 43px;
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +100,11 @@
   margin-top: auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
     width: auto;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
   }
 }

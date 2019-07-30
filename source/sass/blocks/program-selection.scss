@@ -1,7 +1,14 @@
 .program-selection {
   margin: 0 auto;
+  margin-bottom: 5px;
 
-  outline: 1px solid saddlebrown;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .program-selection__wrapper {
@@ -21,6 +28,10 @@
 .program-selection__item {
   margin-bottom: 20px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 570px;
