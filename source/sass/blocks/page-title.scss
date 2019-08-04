@@ -1,21 +1,17 @@
 .page-title {
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 13px;
+  margin-bottom: 20px;
   // min-height: 105px;
 
   @include viewport-width;
   @include standard-paddings;
-
-  font-size: $title-font;
-  line-height: $title-font;
+  @include title;
 
   // border-bottom: $gray-border;
 
   @media (min-width: $tablet-width) {
     border: none;
-    font-size: 60px;
-    line-height: 60px;
     // padding-left: 0;
     // padding-right: 0;
     margin-top: 44px;

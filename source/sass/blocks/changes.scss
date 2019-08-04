@@ -1,0 +1,48 @@
+.changes {
+  // @include viewport-width;
+
+  @media (min-width: $tablet-width) {
+    background: #f2f2f2;
+  }
+}
+
+.changes__wrapper {
+  @include viewport-width;
+  margin: 0 auto;
+  outline: 1px solid lawngreen;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 235px;
+    min-height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 0;
+    min-height: auto;
+  }
+}
+
+.changes__photo {
+  margin-bottom: 31px;
+
+  @media (min-width: $desktop-width) {
+    height: 517px;
+    width: auto;
+    margin-top: -260px;
+    outline: 1px solid red;
+  }
+}
+
+.changes__photo--after {
+  display: none;
+}
+
+.changes__toggle {
+  height: 20px;
+  margin-bottom: 10px;
+  // outline: 1px solid orchid;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}

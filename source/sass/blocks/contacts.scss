@@ -1,0 +1,49 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+
+  &--light-bg {
+    background: #ffffff;
+  }
+}
+
+.contacts__text {
+  margin: 0 auto;
+  // outline: 1px solid aqua;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}
+
+.contacts__map {
+  background-color: #fdf7f0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+  }
+}
+
+.contacts__map,
+.contacts__map iframe {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}
