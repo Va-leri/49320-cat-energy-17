@@ -1,6 +1,10 @@
 .page-footer {
+  min-width: 320px;
   background-color: $gray;
 }
+
+// .page-footer__links {
+// }
 
 .page-footer__wrapper {
   display: flex;

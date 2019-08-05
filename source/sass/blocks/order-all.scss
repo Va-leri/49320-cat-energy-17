@@ -1,4 +1,8 @@
 .order-all {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
   min-height: 289px;
   width: auto;
   background-color: #68b738;
@@ -7,11 +11,37 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    min-height: 200px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    height: auto;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    background-size: auto 100%;
+    background-size: cover;
   }
+}
+
+.order-all::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.order-all__link {
+  display: block;
+  margin-top: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  // padding-left: 55px;
+  // padding-right: 55px;
 }

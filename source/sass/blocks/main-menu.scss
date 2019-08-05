@@ -10,15 +10,16 @@
   min-height: 200px;
 
   @media (min-width: $tablet-width) {
+    @include standard-paddings;
     flex-direction: row;
     min-height: 76px;
-    width: 440px;
+    width: 500px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
-    max-width: 515px;
+    max-width: 50%;
+    width: 595px;
   }
 
   &--dark-background {

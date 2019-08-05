@@ -23,7 +23,14 @@
   // "blocks/index.scss",
   "blocks/site-navigation.scss",
   "blocks/page-title.scss",
-  "blocks/order-all.scss";
+  "blocks/order-all.scss",
+  "blocks/example.scss",
+  "blocks/changes.scss",
+  "blocks/contacts.scss",
+  "blocks/contacts-text.scss",
+  "blocks/selection-form.scss",
+  "blocks/form-page.scss",
+  "blocks/catalog-page.scss";
 
 body {
   position: relative;
@@ -35,4 +42,10 @@ body {
 
 html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
