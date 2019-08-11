@@ -99,22 +99,22 @@
 
   &--use {
     &::before {
-      background-image: url("../../img/advantage-leaf@1x.png");
+      background-image: url("../img/advantage-leaf@1x.png");
     }
   }
 
   &--simplicity {
     &::before {
-      background-image: url("../../img/advantage-powder@1x.png");
+      background-image: url("../img/advantage-powder@1x.png");
     }
   }
 
   &--economy::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
   }
 
   &--quickness::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
