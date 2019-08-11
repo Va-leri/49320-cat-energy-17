@@ -1,3 +1,17 @@
 .catalog-page__section {
-  margin-top: 9px;
+  @media (max-width: 767px) {
+    margin-top: 9px;
+  }
+}
+
+.catalog-page__main-catalog {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }

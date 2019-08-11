@@ -59,7 +59,7 @@
     // height: 460px;
     // @include standard-paddings;
     padding-top: 70px;
-    padding-bottom: 52px;
+    // padding-bottom: 52px;
     background: #f2f2f2;
   }
 }
@@ -67,6 +67,7 @@
 .example__text {
   @media (min-width: $desktop-width) {
     width: 650px;
+    margin-bottom: 70px;
   }
 }
 
@@ -77,17 +78,19 @@
   margin-bottom: 25px;
 
   @include paragraph;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
 
   @media (min-width: $tablet-width) {
     @include viewport-width;
     padding-left: 30px;
     padding-right: 40px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 515px;
     margin-left: 0;
+    margin-bottom: 68px;
 
     @include standard-paddings;
   }
@@ -95,12 +98,13 @@
 
 .example__table {
   margin: 0 auto;
-  border: 1px solid #cdcdcd;
+  // border: 1px solid #cdcdcd;
   width: 100%;
-  padding-bottom: 50px;
-  margin-bottom: 22px;
+  // padding-bottom: 50px;
+  margin-bottom: 10px;
   // min-height: 110px;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include viewport-width;
@@ -111,7 +115,7 @@
     width: 450px;
     margin-left: 0;
     margin-bottom: 0;
-    padding-bottom: 150px;
+    // padding-bottom: 150px;
   }
 }
 
