@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header page-header--welcome">
-    <nav class="page-header__wrapper site-navigation">
+    <nav class="page-header__wrapper site-navigation site-navigation--nojs">
       <div class="site-navigation__wrapper">
         <a class="page-header__logo site-navigation__index-link">
           <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="198" height="38"
@@ -38,7 +38,7 @@
       <div class="quick-start__wrapper">
         <h1 class="quick-start__title">Функциональное питание для котов</h1>
         <b class="quick-start__lead">Занялся собой? Займись котом!</b>
-        <a class="typical-button quick-start__button" href="#">Подобрать программу</a>
+        <a class="typical-button typical-button--long-text quick-start__button" href="#">Подобрать программу</a>
     </section>
     </div>
     <section class="program-selection">
@@ -82,18 +82,18 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих
             тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <table class="example__table">
-            <tr>
-              <td>5 кг</td>
-              <td>60 дней</td>
+          <table class="example__table results-table">
+            <tr class="results-table__row">
+              <td class="results-table__value">5 кг</td>
+              <th class="results-table__metric">снижение веса</th>
             </tr>
-            <tr>
-              <th>снижение веса</th>
-              <th>затрачено времени</th>
+            <tr class="results-table__row">
+              <td class="results-table__value">60 дней</td>
+              <th class="results-table__metric">затрачено времени</th>
             </tr>
-            <tr>
-              <th>Затраты на питание:</th>
-              <td>15 000 руб.</td>
+            <tr class="results-table__row results-table__row--last">
+              <th class="results-table__metric results-table__metric--cost">Затраты на питание:</th>
+              <td class="results-table__value results-table__value--cost">15 000 руб.</td>
             </tr>
           </table>
         </div>
@@ -210,6 +210,9 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/site-navigation-script.js">
+  </script>
 </body>
 
 </html>
