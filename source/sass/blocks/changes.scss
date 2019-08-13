@@ -8,11 +8,13 @@
 
 .changes__wrapper {
   @include viewport-width;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  outline: 1px solid lawngreen;
+  // outline: 1px solid lawngreen;
 
   @media (min-width: $tablet-width) {
-    margin-top: 235px;
+    margin-top: 247px;
     min-height: 462px;
   }
 
@@ -24,25 +26,55 @@
 }
 
 .changes__photo {
-  margin-bottom: 31px;
+  margin-bottom: 20px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: auto;
+    margin-top: -168px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 517px;
     width: auto;
     margin-top: -260px;
-    outline: 1px solid red;
+    margin-bottom: 35px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .changes__photo--before {
+    transform: translateX(7px);
+  }
+
+  .changes__photo--after {
+    transform: translateX(7px);
+  }
+}
+
 
 .changes__photo--after {
   display: none;
 }
 
 .changes__toggle {
-  height: 20px;
+  // height: 20px;
   margin-bottom: 10px;
   // outline: 1px solid orchid;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 37px;
+  }
 }

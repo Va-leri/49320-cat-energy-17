@@ -17,6 +17,8 @@
 
   @include standard-paddings;
   @include viewport-width;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;

@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
+    border: none;
   }
 }
 
@@ -21,11 +22,11 @@
 
   @include title;
   margin-top: 0;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-bottom: 40px;
   }
 
@@ -33,7 +34,7 @@
     margin-top: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 
@@ -43,7 +44,7 @@
   margin: 0 auto;
   //   padding-top: 25px;
   padding-bottom: 25px;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -66,7 +67,7 @@
 
 .example__text {
   @media (min-width: $desktop-width) {
-    width: 650px;
+    width: 610px;
     margin-bottom: 70px;
   }
 }
@@ -124,7 +125,7 @@
   margin: 0 auto;
   margin-left: -20px;
   margin-right: -20px;
-  outline: 1px solid aquamarine;
+  // outline: 1px solid aquamarine;
 
   @media (min-width: $tablet-width) {
     // @include viewport-width;
@@ -132,7 +133,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 650px;
+    width: 690px;
     margin-left: 0;
     margin-right: 0;
     // flex-basis: 100%;

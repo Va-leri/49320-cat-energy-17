@@ -1,5 +1,9 @@
 .method-description {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .method-description__wrapper {

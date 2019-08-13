@@ -11,29 +11,34 @@
 <body>
   <header class="page-header page-header--welcome">
     <nav class="page-header__wrapper site-navigation site-navigation--nojs">
-      <div class="site-navigation__wrapper">
+      <div class="site-navigation__short">
         <a class="page-header__logo site-navigation__index-link">
-          <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="198" height="38"
-            alt="Cat Energy logo-icon">
-          <!-- <img class="page-header__logo-name" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy"> -->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="190" height="50"
+              alt="Cat Energy logo-icon">
+          </picture>
         </a>
         <button class="site-navigation__toggle" type="button" aria-label="Открыть меню"><span>Открыть
             меню</span></button>
       </div>
-      <ul class="site-navigation__list main-menu main-menu--dark-background">
-        <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--current">Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+      <div class="site-navigation__wrapper main-menu main-menu--dark-background">
+        <ul class="site-navigation__list main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--current">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="index-main">
     <section class="quick-start">
       <div class="quick-start__wrapper">
         <h1 class="quick-start__title">Функциональное питание для котов</h1>
@@ -93,19 +98,32 @@
             </tr>
             <tr class="results-table__row results-table__row--last">
               <th class="results-table__metric results-table__metric--cost">Затраты на питание:</th>
-              <td class="results-table__value results-table__value--cost">15 000 руб.</td>
+              <td class="results-table__value results-table__value--cost"> 15 000 руб.</td>
             </tr>
           </table>
         </div>
         <div class="example__photo changes">
           <div class="changes__wrapper">
-            <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png" alt="photo before"
-              class="changes__photo changes__photo--before" width="320" height="240">
-            <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png" alt="photo after"
-              class="changes__photo changes__photo--after" width="320" height="240">
-            <div class="changes__toggle changes__toggle--before">
-              <span>Было</span>
-              <span>Стало</span>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="photo before" class="changes__photo changes__photo--before"
+                width="320" height="240">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="photo after" class="changes__photo changes__photo--after"
+                width="320" height="240">
+            </picture>
+            <div class="changes__toggle changes__toggle--before toggle">
+              <button class="toggle__button" type="button">Было</button>
+              <div class="toggle__scale">
+                <div class="toggle__switch toggle__switch--before" tabindex="0"></div>
+              </div>
+              <button class="toggle__button" type="button">Стало</button>
             </div>
           </div>
         </div>
