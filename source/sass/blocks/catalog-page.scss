@@ -1,3 +1,9 @@
+.catalog-page {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .catalog-page__section {
   @media (max-width: 767px) {
     margin-top: 9px;

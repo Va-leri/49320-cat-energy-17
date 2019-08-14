@@ -11,10 +11,9 @@
   flex-direction: column;
   margin: 0 auto;
 
-  @include standard-paddings;
-  @include viewport-width;
 
   @media (min-width: $tablet-width) {
+    @include viewport-width;
     flex-direction: row;
     justify-content: space-between;
     min-height: 150px;
@@ -23,6 +22,7 @@
 }
 
 .page-footer__section {
+  @include standard-paddings;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -51,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    width: 170px;
+    width: 224px;
     padding-top: 0;
     padding-bottom: 0;
     // outline: 1px solid darkcyan;
@@ -62,9 +62,14 @@
     }
 
     &--copyright {
-      padding-left: 6px;
+      // padding-left: 6px;
+      // padding-right: 0;
       text-align: right;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
   }
 }
 
