@@ -26,8 +26,9 @@
 }
 
 .changes__photo {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 320px;
+  // transform: translateX(-20px);
 
   @media (min-width: $tablet-width) {
     width: 690px;
@@ -37,6 +38,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 13px;
+    transform: translateX(7px);
   }
 
   @media (min-width: $desktop-width) {
@@ -44,18 +46,18 @@
     width: auto;
     margin-top: -260px;
     margin-bottom: 35px;
+    transform: none;
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  .changes__photo--before {
-    transform: translateX(7px);
-  }
+// @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+//   .changes__photo--before {
+//   }
 
-  .changes__photo--after {
-    transform: translateX(7px);
-  }
-}
+//   .changes__photo--after {
+//     transform: translateX(7px);
+//   }
+// }
 
 
 .changes__photo--after {
@@ -63,8 +65,9 @@
 }
 
 .changes__toggle {
+  @include standard-paddings;
   // height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   // outline: 1px solid orchid;
   text-transform: uppercase;
   font-size: 16px;
