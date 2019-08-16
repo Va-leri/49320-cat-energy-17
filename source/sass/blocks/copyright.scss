@@ -24,7 +24,7 @@
 }
 
 .copyright__icon {
-  fill: $footer-icon;
+  color: $footer-icon-color;
   // width: 41px;
   // height: 41px;
   // margin-right: -7px;
@@ -32,11 +32,11 @@
 
 .copyright__link:hover .copyright__icon,
 .copyright__link:focus .copyright__icon {
-  fill: $footer-hover-color;
+  color: $footer-hover-color;
 }
 
 .copyright__link:active .copyright__icon {
-  fill: $footer-active-color;
+  color: $footer-active-color;
 }
 
 .copyright__link:hover,

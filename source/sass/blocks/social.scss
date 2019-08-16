@@ -45,7 +45,7 @@
 .social__icon {
   width: 22px;
   height: 19px;
-  fill: $footer-icon;
+  color: $footer-icon-color;
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -79,11 +79,11 @@
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-  fill: $footer-hover-color;
+  color: $footer-hover-color;
 }
 
 .social__link:active .social__icon {
-  fill: $footer-active-color;
+  color: $footer-active-color;
 }
 
 // .social__link svg {
