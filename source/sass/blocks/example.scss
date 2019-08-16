@@ -39,26 +39,25 @@
 }
 
 .example__wrapper {
-  @include viewport-width;
-  @include standard-paddings;
-  margin: 0 auto;
-  //   padding-top: 25px;
-  padding-bottom: 25px;
-  // outline: 1px solid aquamarine;
+  // @include viewport-width;
+  // // @include standard-paddings;
+  // margin: 0 auto;
+  // //   padding-top: 25px;
+  // padding-bottom: 25px;
+  // // outline: 1px solid aquamarine;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    padding: 0;
-    // padding-top: 30px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 100%;
+  //   padding: 0;
+  //   // padding-top: 30px;
+  // }
 
   @media (min-width: $desktop-width) {
+    // @include standard-paddings;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    // height: 460px;
-    // @include standard-paddings;
     padding-top: 70px;
     // padding-bottom: 52px;
     background: #f2f2f2;
@@ -66,9 +65,15 @@
 }
 
 .example__text {
+  @include viewport-width;
+  @include standard-paddings;
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     width: 610px;
     margin-bottom: 70px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -79,41 +84,37 @@
   margin-bottom: 25px;
 
   @include paragraph;
-  // outline: 1px solid aquamarine;
 
   @media (min-width: $tablet-width) {
-    @include viewport-width;
-    padding-left: 30px;
-    padding-right: 40px;
+    // @include viewport-width;
+    // padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 515px;
+    width: 465px;
     margin-left: 0;
     margin-bottom: 68px;
 
-    @include standard-paddings;
+    // @include standard-paddings;
   }
 }
 
 .example__table {
   margin: 0 auto;
-  // border: 1px solid #cdcdcd;
   width: 100%;
   // padding-bottom: 50px;
   margin-bottom: 10px;
-  // min-height: 110px;
-  // outline: 1px solid aquamarine;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    @include viewport-width;
-    @include standard-paddings;
-  }
+  // @media (min-width: $tablet-width) {
+  //   // @include viewport-width;
+  //   // @include standard-paddings;
+  // }
 
   @media (min-width: $desktop-width) {
-    width: 450px;
+    width: 367px;
     margin-left: 0;
     margin-bottom: 0;
     // padding-bottom: 150px;
@@ -125,12 +126,11 @@
   margin: 0 auto;
   // margin-left: -20px;
   // margin-right: -20px;
-  // outline: 1px solid aquamarine;
 
-  @media (min-width: $tablet-width) {
-    // @include viewport-width;
-    // @include standard-paddings;
-  }
+  // @media (min-width: $tablet-width) {
+  //   // @include viewport-width;
+  //   // @include standard-paddings;
+  // }
 
   @media (min-width: $desktop-width) {
     width: 690px;
