@@ -10,19 +10,22 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 280px;
 
 
   @media (min-width: $tablet-width) {
     @include viewport-width;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     min-height: 150px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     // align-self: center;
   }
 }
 
 .page-footer__section {
-  @include standard-paddings;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -46,10 +49,11 @@
   }
 
   &--copyright {
-    padding-top: 19px;
+    padding-top: 22px;
   }
 
   @media (min-width: $tablet-width) {
+    @include standard-paddings;
     justify-content: center;
     width: 224px;
     padding-top: 0;
@@ -79,5 +83,12 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
   }
 }

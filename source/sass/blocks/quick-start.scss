@@ -28,10 +28,10 @@
   @include standard-paddings;
   @include viewport-width;
 
-  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to top, transparent 175px, #68b738 175px);
   background-repeat: no-repeat;
-  background-size: 280px auto, contain;
-  background-position-y: 167px, top;
+  background-size: 280px auto, contain, auto;
+  background-position-y: 167px, top, center;
   background-position-x: center, center;
 
   color: #ffffff;
@@ -88,6 +88,7 @@
     line-height: 60px;
     margin-top: 43px;
     margin-bottom: 38px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,10 +100,12 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+  min-height: 180px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,7 +115,7 @@
 }
 
 .quick-start__button {
-  margin-top: auto;
+  margin-top: 135px;
 
   @media (min-width: $tablet-width) {
     width: auto;

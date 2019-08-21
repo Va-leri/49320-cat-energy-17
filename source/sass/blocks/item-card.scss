@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    min-height: 430px;
+    min-height: 431px;
     width: 324px;
     // margin-top: 140px;
     // margin-bottom: 0;
@@ -43,6 +43,12 @@
     padding-bottom: 27px;
     border-bottom: 1px solid #d9d9d9;
     background: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -81,6 +87,7 @@
 
 .item-card__photo {
   width: 140px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     align-self: center;
@@ -122,7 +129,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 22px;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,6 +170,8 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
       padding: 0;
+      text-align: left;
+      display: inline-block;
     }
   }
 }
@@ -190,8 +199,19 @@
   }
 }
 
+.item-card__table th {
+  text-align: left;
+}
+
 .item-card__table td {
   text-align: right;
+}
+
+.item-card__table--additional tbody,
+.item-card__table--additional caption {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
 
 .item-card__table--additional td {
@@ -202,6 +222,7 @@
 .item-card__table--additional th {
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -242,12 +263,17 @@
   text-align: center;
   padding-top: 67px;
   min-height: 208px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     background: none;
     outline: 1px solid #e6e6e6;
     padding-top: 115px;
+    justify-content: flex-start;
   }
+
+  // @media (min-width: $desktop-width) {
+  // }
 
   &::before {
     position: absolute;
@@ -284,6 +310,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 48px;
     margin-bottom: 25px;
+    padding: 0 75px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 55px;
   }
 }
 
@@ -316,7 +348,7 @@
 
 .item-card__button--additional {
   @media (min-width: $tablet-width) {
-    margin-top: 18px;
+    margin-top: 26px;
     width: 100%;
   }
 

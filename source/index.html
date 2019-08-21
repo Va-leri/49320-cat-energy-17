@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <svg style="display: none;">
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <!-- <svg style="display: none;">
     <symbol id="icon-vk" viewBox="0 0 22 12" x="0px" y="0px" style="enable-background: new 0 0 22 12;"
       xml:space="preserve">
       <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -26,16 +29,15 @@
       C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
       c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" />
     </symbol>
-    <symbol id="icon-instagram" x="0px" y="0px" viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;"
+    <symbol id="icon-insta" x="0px" y="0px" viewBox="0 0 16.1 16" style="enable-background: new 0 0 16.1 16;"
       xml:space="preserve">
-      <path class="st0"
-        d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                        M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
+      <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+      M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
       <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-                      s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
+      s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
       <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
     </symbol>
-    <symbol id="icon-facebook" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;"
+    <symbol id="icon-fb" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background: new 0 0 10 19;"
       xml:space="preserve">
       <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
       h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
@@ -45,7 +47,7 @@
       <path
         d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
     </symbol>
-  </svg>
+  </svg> -->
 
   <header class="page-header page-header--welcome">
     <nav class="page-header__wrapper site-navigation site-navigation--nojs">
@@ -125,49 +127,53 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих
             тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <table class="example__table results-table">
-            <tr class="results-table__row">
-              <td class="results-table__value">5 кг</td>
-              <th class="results-table__metric">снижение веса</th>
-            </tr>
-            <tr class="results-table__row">
-              <td class="results-table__value">60 дней</td>
-              <th class="results-table__metric">затрачено времени</th>
-            </tr>
-            <tr class="results-table__row results-table__row--last">
-              <th class="results-table__metric results-table__metric--cost">Затраты на питание:</th>
-              <td class="results-table__value results-table__value--cost"> 15 000 руб.</td>
-            </tr>
-          </table>
+          <ul class="example__table results-table">
+            <li class="results-table__row">
+              <p class="results-table__value">5 кг</p>
+              <p class="results-table__metric">снижение веса</p>
+            </li>
+            <li class="results-table__row">
+              <p class="results-table__value">60 дней</p>
+              <p class="results-table__metric">затрачено времени</p>
+            </li>
+            <li class="results-table__row results-table__row--last">
+              <p class="results-table__metric results-table__metric--cost">Затраты на питание:</p>
+              <p class="results-table__value results-table__value--cost"> 15 000 руб.</p>
+            </li>
+          </ul>
         </div>
         <div class="example__photo changes">
           <div class="changes__wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <div class="changes__picture-wrapper changes__picture-wrapper--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" alt="photo before" class="changes__photo changes__photo--before"
-                width="320" height="240">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" alt="photo before" class="changes__photo changes__photo--before"
+                  width="320" height="240">
+              </picture>
+            </div>
+            <div class="changes__picture-wrapper changes__picture-wrapper--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" alt="photo after" class="changes__photo changes__photo--after"
-                width="320" height="240">
-            </picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png"
+                  srcset="img/after-mobile@2x.png 2x" alt="photo after" class="changes__photo changes__photo--after"
+                  width="320" height="240">
+              </picture>
+            </div>
             <div class="changes__toggle changes__toggle--before toggle">
               <button class="toggle__button" type="button">Было</button>
               <div class="toggle__scale">
@@ -193,7 +199,7 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3043550602736!2d30.3221723!3d59.9386348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1564665999197!5m2!1sru!2sru"
-          frameborder="0" style="border: 0;" allowfullscreen></iframe>
+          style="border: 0;" allowfullscreen></iframe>
       </div>
     </section>
     <section class="page-footer__links">
@@ -217,7 +223,7 @@
               <a class="social__link social__link--instagram" href="#">
                 <span class="visually-hidden">Cat Energy on Instagram</span>
                 <svg class="social__icon social__icon--instagram" width="23" height="28">
-                  <use xlink:href="#icon-instagram"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -225,7 +231,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Cat Energy on Facebook</span>
                 <svg class="social__icon social__icon--facebook" width="14" height="28">
-                  <use xlink:href="#icon-facebook"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -235,7 +241,7 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
             <span>HTML Academy</span>
             <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="#icon-copyright"></use>
+              <use xlink:href="#htmlacademy"></use>
             </svg>
           </a>
         </section>
@@ -244,6 +250,8 @@
   </footer>
 
   <script src="js/site-navigation-script.js">
+  </script>
+  <script src="js/picturefill.min.js">
   </script>
 </body>
 

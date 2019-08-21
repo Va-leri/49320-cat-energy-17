@@ -35,6 +35,14 @@
   top: 3px;
   cursor: pointer;
 
+  &--before {
+    left: 5px;
+  }
+
+  &--after {
+    right: 5px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 34px;
     height: 34px;
@@ -43,7 +51,8 @@
     border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     top: 2px;
-    transform: translateY(-50%);
+    left: 214px;
+    transform: translateX(-50%) translateY(-50%);
 
     &::before {
       position: absolute;
@@ -53,7 +62,7 @@
       border-radius: 50%;
       background: #68b738;
       top: 50%;
-      left: 50%;
+      left: 16px;
       margin-top: -4px;
       margin-left: -4px;
     }
@@ -67,21 +76,9 @@
       border: solid 2px #68b738;
     }
   }
-}
 
-.toggle__switch--before {
-  left: 5px;
-
-  @media (min-width: $tablet-width) {
-    left: 0;
-  }
-}
-
-.toggle__switch--after {
-  right: 5px;
-
-  @media (min-width: $tablet-width) {
-    right: 0;
+  @media (min-width: $desktop-width) {
+    left: 217px;
   }
 }
 
