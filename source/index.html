@@ -127,49 +127,53 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих
             тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <table class="example__table results-table">
-            <tr class="results-table__row">
-              <td class="results-table__value">5 кг</td>
-              <th class="results-table__metric">снижение веса</th>
-            </tr>
-            <tr class="results-table__row">
-              <td class="results-table__value">60 дней</td>
-              <th class="results-table__metric">затрачено времени</th>
-            </tr>
-            <tr class="results-table__row results-table__row--last">
-              <th class="results-table__metric results-table__metric--cost">Затраты на питание:</th>
-              <td class="results-table__value results-table__value--cost"> 15 000 руб.</td>
-            </tr>
-          </table>
+          <ul class="example__table results-table">
+            <li class="results-table__row">
+              <p class="results-table__value">5 кг</p>
+              <p class="results-table__metric">снижение веса</p>
+            </li>
+            <li class="results-table__row">
+              <p class="results-table__value">60 дней</p>
+              <p class="results-table__metric">затрачено времени</p>
+            </li>
+            <li class="results-table__row results-table__row--last">
+              <p class="results-table__metric results-table__metric--cost">Затраты на питание:</p>
+              <p class="results-table__value results-table__value--cost"> 15 000 руб.</p>
+            </li>
+          </ul>
         </div>
         <div class="example__photo changes">
           <div class="changes__wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <div class="changes__picture-wrapper changes__picture-wrapper--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" alt="photo before" class="changes__photo changes__photo--before"
-                width="320" height="240">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="changes__photo changes__photo--before" src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" alt="photo before" class="changes__photo changes__photo--before"
+                  width="320" height="240">
+              </picture>
+            </div>
+            <div class="changes__picture-wrapper changes__picture-wrapper--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" alt="photo after" class="changes__photo changes__photo--after"
-                width="320" height="240">
-            </picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="changes__photo changes__photo--after" src="img/after-mobile@1x.png"
+                  srcset="img/after-mobile@2x.png 2x" alt="photo after" class="changes__photo changes__photo--after"
+                  width="320" height="240">
+              </picture>
+            </div>
             <div class="changes__toggle changes__toggle--before toggle">
               <button class="toggle__button" type="button">Было</button>
               <div class="toggle__scale">
@@ -195,7 +199,7 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3043550602736!2d30.3221723!3d59.9386348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1564665999197!5m2!1sru!2sru"
-          frameborder="0" style="border: 0;" allowfullscreen></iframe>
+          style="border: 0;" allowfullscreen></iframe>
       </div>
     </section>
     <section class="page-footer__links">
@@ -246,6 +250,8 @@
   </footer>
 
   <script src="js/site-navigation-script.js">
+  </script>
+  <script src="js/picturefill.min.js">
   </script>
 </body>
 

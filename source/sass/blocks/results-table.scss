@@ -1,25 +1,46 @@
-.results-table tbody {
+.results-table {
+  // border-spacing: 32px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 280px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+  }
 }
+
+// .results-table tbody {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   width: 344px;
+
+//   @media (min-width: $tablet-width) {
+//     width: 100%;
+//   }
+// }
 
 .results-table__row {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  // justify-content: center;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
   align-items: center;
+  width: 124px;
   // flex-basis: 100%;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +58,15 @@
   color: #111111;
   font-family: "Oswald Regular", "Arial", sans-serif;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  // &:last-of-type {
+  //   margin-left: 32px;
+  // }
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -57,7 +86,7 @@
   color: #444444;
   font-family: "Arial", sans-serif;
   font-weight: normal;
-  margin-top: -12px;
+  margin-top: -8px;
   background: #f2f2f2;
 
   @media (min-width: $tablet-width) {
@@ -65,7 +94,6 @@
     font-size: 14px;
     line-height: 14px;
     width: auto;
-    margin-top: -10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,10 +107,15 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: 7px;
+  height: auto;
+  width: auto;
+  align-items: baseline;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    margin-top: 0;
+    padding-top: 5px;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
@@ -91,7 +124,8 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     flex-direction: row;
-    margin-top: 48px;
+    margin-top: 33px;
+    padding-top: 0;
   }
 }
 
@@ -103,13 +137,14 @@
   color: #111111;
   border: none;
   width: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+  height: auto;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 0;
+    margin-bottom: 0;
     height: auto;
     padding-top: 7px;
   }
@@ -119,6 +154,6 @@
   @media (min-width: $desktop-width) {
     width: 162px;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 30px;
   }
 }
