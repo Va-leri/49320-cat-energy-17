@@ -79,7 +79,12 @@
   }
 }
 
-.item-card__picture {
+.item-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item-card__link--photo {
   @media (max-width: $tablet-width - 1) {
     width: 50%;
   }

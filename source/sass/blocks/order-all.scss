@@ -64,11 +64,13 @@
   color: #ffffff;
   text-decoration: none;
   text-align: center;
+  padding-top: 90px;
   // padding-left: 55px;
   // padding-right: 55px;
 
   @media (min-width: $tablet-width) and (max-width: 1299px) {
     text-align: left;
     margin-bottom: auto;
+    padding-top: 0;
   }
 }

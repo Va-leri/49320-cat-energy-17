@@ -103,7 +103,8 @@
     border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
     font-size: 20px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom: 1px solid rgba(17, 17, 17, 0.4);
     }
 
