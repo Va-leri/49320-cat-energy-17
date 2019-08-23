@@ -40,8 +40,10 @@
     @include standard-paddings;
     flex-direction: row;
     min-height: 76px;
-    width: 500px;
-    justify-content: space-between;
+    width: 535px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +52,23 @@
     padding-left: 40px;
     padding-right: 40px;
     justify-content: flex-end;
+
+    &--dark-background {
+      &::after {
+        position: relative;
+        content: "";
+        width: 552px;
+        height: 500px;
+        background-image: url("../img/index-can-desktop@1x.png");
+        background-size: contain;
+        top: 33px;
+        left: -220px;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-can-desktop@2x.png");
+        }
+      }
+    }
   }
 }
 
@@ -65,6 +84,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +120,8 @@
     // border-bottom: 2px solid #ffffff;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @media (min-width: $tablet-width) {
       opacity: 0.6;
     }
