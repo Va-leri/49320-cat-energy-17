@@ -1,6 +1,8 @@
 "use strict";
 
 var gulp = require("gulp");
+var ghPages = require("gh-pages");
+var path = require("path");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
@@ -17,13 +19,11 @@ var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
-var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function () {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-});
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
